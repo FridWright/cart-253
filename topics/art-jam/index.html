@@ -20,6 +20,13 @@
     // You'll write your JavaScript here
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
+
+    //Draw Face
+    ctx.fillStyle = "#ffccaa"; // skin color
+    ctx.beginPath();
+    ctx.arc(300, 300, 60, 0, Math.PI * 2); // (x, y, radius)
+    ctx.fill();
+
   </script>
 </body>
 

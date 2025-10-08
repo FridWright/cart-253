@@ -21,7 +21,7 @@
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
 
-    // Track Seed Positions
+    //Track Seed Positions
     let seeds = [];
     let seedsBlown = false; // Tracks whether they’ve started blowing
 
@@ -77,7 +77,7 @@
       for (let i = 0; i < seeds.length; i++) {
         let seed = seeds[i];
 
-        // If blown, move seeds slowly to the right
+        //If blown, move seeds slowly to the right
         if (seedsBlown) {
           seed.x += 1; // move right
           seed.y += (Math.random() - 0.5) * 0.5; // slight up/down wiggle
@@ -129,6 +129,7 @@
     //Credits
     //This project was created by Fridrikka Wright as part of the CART 253 Art Jam.
     // Some code guidance and explanations provided by ChatGPT.
+
   </script>
 
 

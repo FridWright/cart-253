@@ -17,15 +17,26 @@
   <canvas id="canvas" width="800" height="600"></canvas>
 
   <script>
-    // You'll write your JavaScript here
+
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
 
     //Draw Face
-    ctx.fillStyle = "#ffccaa"; // skin color
+    ctx.fillStyle = "#ffccaa"; // skin colour
     ctx.beginPath();
     ctx.arc(300, 300, 60, 0, Math.PI * 2); // (x, y, radius)
     ctx.fill();
+
+    //Draw Eyes
+    ctx.fillStyle = "brown"; // eye colour
+
+    ctx.beginPath();
+    ctx.arc(280, 290, 5, 0, Math.PI * 2); // left eye
+    ctx.fill();
+
+
+
+
 
   </script>
 </body>

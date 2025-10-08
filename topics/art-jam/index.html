@@ -53,6 +53,17 @@
     ctx.lineTo(400, 500);
     ctx.stroke();
 
+    //Draw Dandelion Seeds
+    ctx.fillStyle = "#FFFFFF";
+    for (let i = 0; i < 20; i++) {
+      let fx = 390 + Math.random() * 30;
+      let fy = 390 + Math.random() * 30;
+      ctx.beginPath();
+      ctx.arc(fx, fy, 4, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+
   </script>
 </body>
 

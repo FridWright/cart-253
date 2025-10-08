@@ -25,77 +25,106 @@
     let seeds = [];
     let seedsBlown = false; // Tracks whether they’ve started blowing
 
+    const dandelionX = 390;
+    const dandelionY = 390;
+
     //Create Seed Positions
     for (let i = 0; i < 40; i++) {
       seeds.push({
-        x: 390 + Math.random() * 40,
-        y: 390 + Math.random() * 40
+        x: dandelionX + Math.random() * 40,
+        y: dandelionY + Math.random() * 40,
+        speedX: 0
       });
     }
 
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+      //Draw Face
+      ctx.fillStyle = "#ffccaa"; // skin colour (beige)
+      ctx.beginPath();
+      ctx.arc(300, 300, 60, 0, Math.PI * 2); // (x, y, radius)
+      ctx.fill();
 
-    //Draw Face
-    ctx.fillStyle = "#ffccaa"; // skin colour (beige)
-    ctx.beginPath();
-    ctx.arc(300, 300, 60, 0, Math.PI * 2); // (x, y, radius)
-    ctx.fill();
-
-    //Draw Eyes
-    ctx.fillStyle = "#5C4033"; // eye colour (dark brown)
-
-    ctx.beginPath();
-    ctx.arc(280, 290, 5, 0, Math.PI * 2); // left eye
-    ctx.fill();
-
-    ctx.beginPath();
-    ctx.arc(320, 290, 5, 0, Math.PI * 2); // right eye
-    ctx.fill();
-
-    //Draw Mouth
-    ctx.fillStyle = "#000000"; // mouth colour (black)
-
-    ctx.beginPath();
-    ctx.arc(300, 325, 5, 0, Math.PI * 2);
-    ctx.fill();
-
-    //Draw Dandelion Stem
-    ctx.strokeStyle = "#008000";
-    ctx.lineWidth = 6;
-    ctx.beginPath();
-    ctx.moveTo(400, 430);
-    ctx.lineTo(400, 500);
-    ctx.stroke();
-
-    //Draw Dandelion Seeds
-    ctx.fillStyle = "#FFFFFF";
-    for (let i = 0; i < seeds.length; i++) {
-      let seed = seeds[i];
-
-      // If blown, move seeds slowly to the right
-      if (seedsBlown) {
-        seed.x += 1; // move right
-        seed.y += (Math.random() - 0.5) * 0.5; // slight up/down wiggle
-      }
+      //Draw Eyes
+      ctx.fillStyle = "#5C4033"; // eye colour (dark brown)
 
       ctx.beginPath();
-      ctx.arc(fluff.x, fluff.y, 4, 0, Math.PI * 2);
+      ctx.arc(280, 290, 5, 0, Math.PI * 2); // left eye
       ctx.fill();
+
+      ctx.beginPath();
+      ctx.arc(320, 290, 5, 0, Math.PI * 2); // right eye
+      ctx.fill();
+
+      //Draw Mouth
+      ctx.fillStyle = "#000000"; // mouth colour (black)
+
+      ctx.beginPath();
+      ctx.arc(300, 325, 5, 0, Math.PI * 2);
+      ctx.fill();
+
+      //Draw Dandelion Stem
+      ctx.strokeStyle = "#008000";
+      ctx.lineWidth = 6;
+      ctx.beginPath();
+      ctx.moveTo(400, 430);
+      ctx.lineTo(400, 500);
+      ctx.stroke();
+
+      //Draw Dandelion Seeds
+      ctx.fillStyle = "#FFFFFF";
+      for (let i = 0; i < seeds.length; i++) {
+        let seed = seeds[i];
+
+        // If blown, move seeds slowly to the right
+        if (seedsBlown) {
+          seed.x += 1; // move right
+          seed.y += (Math.random() - 0.5) * 0.5; // slight up/down wiggle
+        }
+
+        ctx.beginPath();
+        ctx.arc(seed.x, seed.y, 4, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      //Draw Top Hat
+
+      //Hat Brim
+      ctx.fillStyle = "#000000"; // hat brim colour (black)
+      ctx.fillRect(250, 240, 100, 10); // x, y, width, height
+
+      //Hat Body
+      ctx.fillStyle = "#000000"; // hat body colour (black)
+      ctx.fillRect(270, 180, 60, 60); // (x, y, width, height)
+
+      //Hat Ribbon
+      ctx.fillStyle = "#FFC0CB"; // hat ribbon colour (pink)
+      ctx.fillRect(270, 225, 60, 10);
+
+
+      requestAnimationFrame(draw); // Loop animation
+
     }
 
-    //Draw Top Hat
+    //Start the animation
+    draw();
 
-    //Hat Brim
-    ctx.fillStyle = "#000000"; // hat brim colour (black)
-    ctx.fillRect(250, 240, 100, 10); // x, y, width, height
+    //Blow seeds on mouse hover
+    canvas.addEventListener("mousemove", function (e) {
+      const rect = canvas.getBoundingClientRect();
+      const mouseX = e.clientX - rect.left;
+      const mouseY = e.clientY - rect.top;
 
-    //Hat Body
-    ctx.fillStyle = "#000000"; // hat body colour (black)
-    ctx.fillRect(270, 180, 60, 60); // (x, y, width, height)
-
-    //Hat Ribbon
-    ctx.fillStyle = "#FFC0CB"; // hat ribbon colour (pink)
-    ctx.fillRect(270, 225, 60, 10);
+      if (
+        mouseX >= dandelionX - 20 &&
+        mouseX <= dandelionX + 40 &&
+        mouseY >= dandelionY - 20 &&
+        mouseY <= dandelionY + 40
+      ) {
+        seedsBlown = true;
+      }
+    });
 
   </script>
 </body>

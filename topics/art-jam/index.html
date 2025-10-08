@@ -69,11 +69,17 @@
 
     //Draw Dandelion Seeds
     ctx.fillStyle = "#FFFFFF";
-    for (let i = 0; i < 40; i++) {
-      let fx = 390 + Math.random() * 40;
-      let fy = 390 + Math.random() * 40;
+    for (let i = 0; i < seeds.length; i++) {
+      let seed = seeds[i];
+
+      // If blown, move seeds slowly to the right
+      if (seedsBlown) {
+        seed.x += 1; // move right
+        seed.y += (Math.random() - 0.5) * 0.5; // slight up/down wiggle
+      }
+
       ctx.beginPath();
-      ctx.arc(fx, fy, 4, 0, Math.PI * 2);
+      ctx.arc(fluff.x, fluff.y, 4, 0, Math.PI * 2);
       ctx.fill();
     }
 

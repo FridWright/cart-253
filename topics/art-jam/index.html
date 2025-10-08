@@ -21,6 +21,20 @@
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
 
+    // Track Seed Positions
+    let seeds = [];
+    let seedsBlown = false; // Tracks whether they’ve started blowing
+
+    //Create Seed Positions
+    for (let i = 0; i < 40; i++) {
+      seeds.push({
+        x: 390 + Math.random() * 40,
+        y: 390 + Math.random() * 40
+      });
+    }
+
+
+
     //Draw Face
     ctx.fillStyle = "#ffccaa"; // skin colour (beige)
     ctx.beginPath();

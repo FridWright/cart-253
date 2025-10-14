@@ -2,11 +2,11 @@
 
 FRIDRIKKA WRIGHT
 
-[View this project online](file:///Users/fridwright/Documents/CART%20253/topics/art-jam/index.html)
+[View this project online](https://fridwright.github.io/cart-253/topics/art-jam/)
 
 ## Description
 
-> This is an simple, interactive self-portrait created using **HTML5 Canvas** and **JavaScript**, where the user is shown blowing out dandelion fluff that floats away when hovered over.
+> This is an simple, interactive self-portrait created using **HTML5 Canvas** and **JavaScript**, where the user is shown a self portrait blowing out dandelion fluff that floats away when hovered over.
 
 ## Screenshot(s)
 

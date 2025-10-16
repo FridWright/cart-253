@@ -1,33 +1,35 @@
 # Mod Jam Ideas
-1. Frog is after bananas instead of flies
-    /
-2. Frog increases slightly in size after each fly caught
-    /
+
+1. Frog is after flying bananas instead of flies
+    / Frog gets a monkey-ears costume? Monkey sound added when fly is caught? Banana is boomerang-ing around screen.
+2. Control switches from the frog to the fly
+    / The frog automatically sticks out his tongue in random direction pattern. The user is instead controlling the location of the fly with their cursor, trying to avoid being caught.
 3. Flies are of various different colours, and the frog turns the colour of each fly it catches
-    /
+    / One fly on screen at a time. Red fly caught, frog turns red. Yellow fly caught, frog turns yellow. Etc.
 4. Certain flies are marked poison, and the frog dies if it catches a poison fly
-    /
+    / Multiple flies on screen at the same time. New unpoisoned flies enter the screen after their predecessor is caught. A ratio of 2 poisoned 4 unpoisoned on screen at all times?
 5. Certain flies are mutant, and the frog gets two tongues that go off in separate directions if it catches a mutant fly
-    /
+    / One fly on screen at a time. Every third fly is mutant. Catching a mutant fly makes the frog get 2 tongues that go out at opposite angles when activated. Adds potential difficulty for catching the preceding fly. 
+        Mutant tongue goes away when normal fly is caught. Mutant frog can be purple and spotted with yellow eyes and make a weird sound instead of a "slurp". 
 6. Certain flies are armed with bullets and are shooting at the frog, if hit, the frog dies
-    / Frog must catch the fly before being hit. Should the frog be able to move to avoid bullets?
+    / Frog must catch the fly before being hit. Should the frog be able to move to avoid bullets? The rate of the fly's movement would have to be slowed down/less erratic.
 7. Multiple flies on screen at a time. Frog much catch them all before a count-down timer reaches 0
-    /
+    / Add a count-down timer somewhere on the screen. Maybe 15 seconds. 10 flies on screen at a time. Adds difficulty with a time aspect.
 8. The background slowly fades from blue to sunset to night-time. At dusk, the flies turn into glowing fireflies
-    /
+    / The sky gradually cycles from blue to orange to pink to purple to dark blue. Flies turn a glowy yellow at purple. This can be a cycle that repeats every minute.
 9. The black pupils of the frog's eyes briefly turn to red hearts when a fly is caught
-    /
+    / Just a nice little aspect of appreciation. 
 10. The frog says "niiiiice" when it catches a fly
-    /
-11. 
-    /
-12.
-    /
-13.
-    /
-14.
-    /
-15.
+    / The current "gulp" sound is replaced with a voice audio that makes him sound like a super chill guy
+11. Scuba Frog. The frog is underwater and gets a snorkel
+    / Background changes to a sea scene with seaweed, bubbles, sand, etc. Could add a layer of difficulty to the game, in terms of visibility.
+12. Space Frog. The frog is in outerspace and gets a space helmet
+    / Backgroud changes to a dark starry sky with planets and moons. Could add a layer of difficulty to the game, in terms of visibility.
+13. The fly starts at the top of the screen, don't let it reach the frog
+    / Each new fly begins near the top of the screen and gradually moves downward closer and closer to the frog, while keeping an erratic horizontal pattern. The fly must be caught before reaching the frog, otherwise game over. 
+14. Flies start large and then decrease in size after each one is caught.
+    / Flies begin reasonably large and easy to catch, and incrementally become smaller and smaller each time one is caught, increasing difficulty. Until the fly is imperceptable?
+15. 
     /
 16.
     /

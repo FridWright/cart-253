@@ -1,0 +1,41 @@
+# Mod Jam Ideas
+1. Frog is after bananas instead of flies
+    /
+2. Frog increases slightly in size after each fly caught
+    /
+3. Flies are of various different colours, and the frog turns the colour of each fly it catches
+    /
+4. Certain flies are marked poison, and the frog dies if it catches a poison fly
+    /
+5. Certain flies are mutant, and the frog gets two tongues that go off in separate directions if it catches a mutant fly
+    /
+6. Certain flies are armed with bullets and are shooting at the frog, if hit, the frog dies
+    / Frog must catch the fly before being hit. Should the frog be able to move to avoid bullets?
+7. Multiple flies on screen at a time. Frog much catch them all before a count-down timer reaches 0
+    /
+8. The background slowly fades from blue to sunset to night-time. At dusk, the flies turn into glowing fireflies
+    /
+9. The black pupils of the frog's eyes briefly turn to red hearts when a fly is caught
+    /
+10. The frog says "niiiiice" when it catches a fly
+    /
+11. 
+    /
+12.
+    /
+13.
+    /
+14.
+    /
+15.
+    /
+16.
+    /
+17.
+    /
+18.
+    /
+19.
+    /
+20.
+    /

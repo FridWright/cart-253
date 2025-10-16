@@ -29,15 +29,27 @@
     / Each new fly begins near the top of the screen and gradually moves downward closer and closer to the frog, while keeping an erratic horizontal pattern. The fly must be caught before reaching the frog, otherwise game over. 
 14. Flies start large and then decrease in size after each one is caught.
     / Flies begin reasonably large and easy to catch, and incrementally become smaller and smaller each time one is caught, increasing difficulty. Until the fly is imperceptable?
-15. 
-    /
-16.
-    /
-17.
-    /
-18.
-    /
-19.
-    /
-20.
-    /
+15. Flies are trapped in balloons that the frog must pop before catching
+    / Red balloons slowly rise from the bottom of the screen. The frog must pop the balloon with it's tongue, before it reaches and surpasses the top of the screen. Doing so will release the fly. Catch as normal. 
+        Maybe release a balloon from the bottom of screen every 15 seconds? Balloons move in a gradual vertical, the fly remains quick and erratic.
+16. Frog VS AI Frog
+    / There are two frogs. One at the top of the screen, facing down. One at the bottom of the screen, facing up. The user controls the latter. The former is controlled by AI. This "ceiling frog" competes with the user to catch the fly. 
+        Potentially add a tally score to document the user's fly count VS the AI ceiling frog fly count. 
+17. Galaga Frog
+    / Atari-style. Flies begin at top of screen and dive bomb at the frog in a quick, straight line pattern. The frog must catch the flies before they hit him. The frog can only be hit a maximum of 5 times before game over. 
+        Have the flies attack in an increasingly incremental intensity. Have a counting system to be able to attribute a high-score for most flies caught/stopped, AKA most time spent "alive". 
+18. Lazy Frog
+    / Each fly caught increases the width of the frog, but decreases the speed of his tongue movement. The more flies caught, the wider the frog, and the slower his reaction speed.
+        To make catching flies still desirable within the game, allow the tongue width to also increase with the frog. Slower, but covering more area. 
+19. Seasonal Frog
+    / Experience dependent on the month that the user is playing the game. 
+    In spring, the background is pink, the frog is catching easter eggs or blossoms with fly wings.
+    In summer, the background is blue, the frog is catching suns with fly wings.
+    In autumn, the background is orange, the frog is catching red leaves with wings.
+    In winter, the background is dark blue, the frog is catching snowflakes with fly wings. 
+    All of the icons with "fly wings" move in the same way, just with a seasonal aspect that corresponds to the user's reality. 
+20. Beautician Frog
+    / Instead of flies, have flying make-up items. Ex/ flying lipstick caught = red lips on frog. Ex/ flying blush = pink cheeks on frog. Ex/ flying mascara caught = long, black eyelashes on frog. Etc.
+        But to what point? Will this frog be drowning in cake-face? Maybe let one of the flies be a makeup remove, to refresh the natural frog face. 
+        Have different colours of make-up flying around? Ex/ Orange lipstick, purple blush. 
+        Multiple make-up flies are in the sky? To be able to customize your frog's appearance, upon a catch?
